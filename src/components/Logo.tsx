@@ -8,24 +8,27 @@ const Logo = ({ size = 120 }: { size?: number }) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path 
-          d="M 30 60 L 30 90 L 210 90 L 210 60 L 195 35 L 175 50 L 155 30 L 135 45 L 115 25 L 95 45 L 75 30 L 55 50 L 35 35 Z" 
-          stroke="#1A1F2C" 
-          strokeWidth="2.5" 
-          fill="none"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
+        <circle cx="45" cy="60" r="4" fill="#1A1F2C" />
+        <circle cx="195" cy="60" r="4" fill="#1A1F2C" />
+        
+        <rect x="45" y="35" width="2" height="50" fill="#8E9196" opacity="0.4" />
+        <rect x="75" y="35" width="2" height="50" fill="#8E9196" opacity="0.4" />
+        <rect x="105" y="35" width="2" height="50" fill="#8E9196" opacity="0.4" />
+        <rect x="135" y="35" width="2" height="50" fill="#8E9196" opacity="0.4" />
+        <rect x="165" y="35" width="2" height="50" fill="#8E9196" opacity="0.4" />
+        <rect x="195" y="35" width="2" height="50" fill="#8E9196" opacity="0.4" />
+        
+        <line x1="30" y1="85" x2="210" y2="85" stroke="#1A1F2C" strokeWidth="2" />
         
         <text
           x="120"
-          y="75"
+          y="70"
           fontFamily="'Poppins', sans-serif"
-          fontSize="36"
+          fontSize="38"
           fontWeight="300"
           fill="#1A1F2C"
           textAnchor="middle"
-          letterSpacing="12"
+          letterSpacing="14"
         >
           ЛОКУС
         </text>
