@@ -1,25 +1,46 @@
 const Logo = ({ size = 120 }: { size?: number }) => {
+  const scale = size / 120;
+  
   return (
-    <div className="relative" style={{ width: size, height: size }}>
+    <div className="relative inline-flex items-center justify-center" style={{ width: size * 2, height: size }}>
       <svg
-        width={size}
+        width={size * 2}
         height={size}
-        viewBox="0 0 120 120"
+        viewBox="0 0 240 120"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <rect x="20" y="20" width="80" height="80" stroke="#0EA5E9" strokeWidth="2" fill="none" />
+        <path 
+          d="M 40 40 L 70 10 L 100 30 L 130 10 L 160 30 L 190 10 L 200 20" 
+          stroke="#1A1F2C" 
+          strokeWidth="2" 
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
         
-        <rect x="30" y="30" width="30" height="30" fill="#1A1F2C" />
+        <rect 
+          x="40" 
+          y="40" 
+          width="160" 
+          height="70" 
+          stroke="#1A1F2C" 
+          strokeWidth="2" 
+          fill="none"
+        />
         
-        <rect x="65" y="30" width="30" height="30" fill="#0EA5E9" />
-        
-        <rect x="30" y="65" width="30" height="30" fill="#0EA5E9" />
-        
-        <rect x="65" y="65" width="30" height="30" fill="#8E9196" />
-        
-        <line x1="60" y1="20" x2="60" y2="100" stroke="#0EA5E9" strokeWidth="1" opacity="0.3" />
-        <line x1="20" y1="60" x2="100" y2="60" stroke="#0EA5E9" strokeWidth="1" opacity="0.3" />
+        <text
+          x="120"
+          y="85"
+          fontFamily="'Josefin Sans', sans-serif"
+          fontSize="48"
+          fontWeight="300"
+          fill="#1A1F2C"
+          textAnchor="middle"
+          letterSpacing="8"
+        >
+          ЛОКУС
+        </text>
       </svg>
     </div>
   );

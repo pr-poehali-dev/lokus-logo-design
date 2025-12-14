@@ -67,7 +67,7 @@ const BrandIcons = () => {
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
       {icons.map((icon, index) => (
         <div key={index} className="flex flex-col items-center gap-3">
-          <div className="text-primary transition-transform hover:scale-110 duration-300">
+          <div className="text-secondary transition-transform hover:scale-110 duration-300">
             {icon.svg}
           </div>
           <span className="text-sm font-medium text-muted-foreground">{icon.name}</span>

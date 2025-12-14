@@ -5,18 +5,18 @@ import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const colors = [
-    { name: "Графит", hex: "#1A1F2C", desc: "Основной тёмный" },
-    { name: "Точность", hex: "#0EA5E9", desc: "Акцентный синий" },
-    { name: "Пространство", hex: "#F1F0FB", desc: "Светлый фон" },
-    { name: "Бетон", hex: "#8E9196", desc: "Нейтральный серый" }
+    { name: "Чёрный", hex: "#1A1F2C", desc: "Основной цвет" },
+    { name: "Серый", hex: "#8E9196", desc: "Дополнительный" },
+    { name: "Светло-серый", hex: "#F5F5F5", desc: "Фоновый" },
+    { name: "Белый", hex: "#FFFFFF", desc: "Чистый фон" }
   ];
 
   const typography = [
     {
-      name: "Montserrat",
+      name: "Josefin Sans",
       samples: [
-        { weight: "Bold", size: "48px", text: "ЛОКУС" },
-        { weight: "SemiBold", size: "32px", text: "Проектирование" },
+        { weight: "Light", size: "48px", text: "ЛОКУС" },
+        { weight: "Regular", size: "32px", text: "Проектирование" },
         { weight: "Medium", size: "24px", text: "Строительство объектов" }
       ]
     },
@@ -112,7 +112,7 @@ const Index = () => {
                                    sample.weight.toLowerCase().includes('semibold') ? 600 :
                                    sample.weight.toLowerCase().includes('medium') ? 500 :
                                    sample.weight.toLowerCase().includes('light') ? 300 : 400,
-                        fontFamily: font.name === "Montserrat" ? "'Montserrat', sans-serif" : "'IBM Plex Sans', sans-serif"
+                        fontFamily: font.name === "Josefin Sans" ? "'Josefin Sans', sans-serif" : "'IBM Plex Sans', sans-serif"
                       }}
                       className="text-foreground"
                     >
