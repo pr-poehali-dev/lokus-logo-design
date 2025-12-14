@@ -13,7 +13,7 @@ const Index = () => {
 
   const typography = [
     {
-      name: "Josefin Sans",
+      name: "Poppins",
       samples: [
         { weight: "Light", size: "48px", text: "ЛОКУС" },
         { weight: "Regular", size: "32px", text: "Проектирование" },
@@ -112,7 +112,7 @@ const Index = () => {
                                    sample.weight.toLowerCase().includes('semibold') ? 600 :
                                    sample.weight.toLowerCase().includes('medium') ? 500 :
                                    sample.weight.toLowerCase().includes('light') ? 300 : 400,
-                        fontFamily: font.name === "Josefin Sans" ? "'Josefin Sans', sans-serif" : "'IBM Plex Sans', sans-serif"
+                        fontFamily: font.name === "Poppins" ? "'Poppins', sans-serif" : "'IBM Plex Sans', sans-serif"
                       }}
                       className="text-foreground"
                     >
